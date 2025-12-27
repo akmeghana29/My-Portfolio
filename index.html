@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>My Portfolio</title>
+</head>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">AK <span>Meghana</span></a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <!-- TEXT -->
+        <div class="home__content">
+          <div class="home__data">
+            <h3 class="home__subtitle">Hello, <span>I'm</span></h3>
+            <h1 class="home__title">A Kirti Meghana</h1>
+            <h3 class="home__education"><span>AI</span> and <span>Full Stack</span> Developer</h3>
+            <p class="home__description">
+              I design and build scalable web applications,
+              machine learning models and data science solutions.
+              Experienced in working with real-world data and
+              production-ready systems.
+            </p>
+            <a href="assets/cv/Meghana_CV.pdf" class="button" download>Download my CV</a>
+          </div>
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/akmeg29/" target="_blank" class="home__social-link"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/akmeghana29" target="_blank" class="home__social-link"><i class="ri-github-fill"></i></a>
+            <a href="https://leetcode.com/u/akmeghana29/" target="_blank" class="home__social-link"><i class="ri-code-box-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- IMAGE + BLOB -->
+        <div class="home__image">
+          <!-- Blob background -->
+          <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="blobClip">
+                <path d="M60.5,-46.8C76.1,-28.6,84.9,-3.6,79.2,16.9C73.6,37.3,53.5,53.3,30.8,64.4C8.1,75.4,-17.1,81.6,-36,73.1C-55,64.6,-67.8,41.5,-71.3,18.4C-74.9,-4.7,-69.2,-27.7,-55.8,-45.3C-42.4,-63,-21.2,-75.3,0.6,-75.7C22.4,-76.2,44.8,-64.9,60.5,-46.8Z" transform="translate(100 100)"/>
+              </clipPath>
+            </defs>
+
+            <path fill="#7F8CAA" d="M60.5,-46.8C76.1,-28.6,84.9,-3.6,79.2,16.9C73.6,37.3,53.5,53.3,30.8,64.4C8.1,75.4,-17.1,81.6,-36,73.1C-55,64.6,-67.8,41.5,-71.3,18.4C-74.9,-4.7,-69.2,-27.7,-55.8,-45.3C-42.4,-63,-21.2,-75.3,0.6,-75.7C22.4,-76.2,44.8,-64.9,60.5,-46.8Z" transform="translate(100 100)"/>
+
+            <!-- Image clipped to blob -->
+            <image href="assets/img/myimg.png" width="200" height="200" clip-path="url(#blobClip)" preserveAspectRatio="xMidYMid slice"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!================ABOUT=================>
+    <section class="about section" id="about">
+      <div class="about__container container grid">
+        <div class="about__data">
+          <h3 class="section__subtitle">
+            My <span>Intro</span>
+          </h3>
+
+          <h2 class="section__title">
+            About Me
+          </h2>
+
+          <p class="about__description">
+            I am a final year computer science student.
+            Experienced in working with production ready
+            systems and real-world data, I design and build 
+            scalable web applications, machine learning models
+            and data science solutions.
+          </p>
+
+          <a href="#contact" class="button">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    <!================SKILLS=================>
+    <section class="skills section">
+      <div class="skills__container container grid">
+        <div class="skills__data">
+          <h3 class="section__subtitle">
+            Main <span>Skills</span>
+          </h3>
+
+          <h2 class="section__title">
+            Core Skills
+          </h2>
+
+          <p class="skills__description">
+            See fully what skills I have and perform,
+            to develop the projects for you.
+          </p>
+
+          <a href="#projects" class="button">See Projects</a>
+        </div>
+        <div class="skills__content">
+          <ol class="skills__group">
+            <li class="skills__item">HTML & CSS</li>
+            <li class="skills__item">JavaScript</li>
+            <li class="skills__item">MERN Stack</li>
+            <li class="skills__item">SQL</li>
+            <li class="skills__item">Java</li>
+          </ol>
+
+          <ol class="skills__group" start="6">
+            <li class="skills__item">Python</li>
+            <li class="skills__item">Machine Learning</li>
+            <li class="skills__item">Deep Learning</li>
+            <li class="skills__item">Data Science</li>
+            <li class="skills__item">NLP</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!================SERVICES=================>
+    <section class="services section" id="services">
+      <h3 class="section__subtitle">
+        My <span>Services
+        </span>
+      </h3>
+
+      <h2 class="section__title">
+        What I Do
+      </h2>
+
+      <div class="services__container container grid">
+        <article class="services__card">
+          <i class="ri-layout-3-line services__icon"></i>
+
+          <h2 class="services__title">Web Development</h2>
+
+          <p class="services__description">
+            Full stack web development using
+            latest technologies with sound 
+            understanding of Web Design and 
+            building backend architechtures. 
+          </p>
+        </article>
+
+        <article class="services__card">
+          <i class="ri-tools-line services__icon"></i>
+          <h2 class="services__title">ML Model Integration</h2>
+          <p class="services__description">
+          I can build machine learning models, 
+          integrate them with applications 
+          and softwares, including deployment 
+          and API integrations.
+          </p>
+        </article>
+
+        <article class="services__card">
+          <i class="ri-pie-chart-2-line services__icon"></i>
+          <h2 class="services__title">Data Science Solutions</h2>
+
+          <p class="services__description">
+            I provide data-driven solutions 
+            with strong understanding of data 
+            analysis, feature engineering, and
+            predictive modeling.
+          </p>
+        </article>
+      </div>
+
+
+    </section>
+    <!================PROJECTS=================>
+    <section class="projects section" id="projects">
+      <h3 class="section__subtitle">
+        My <span>Major Projects</span>
+      </h3>
+
+      <h2 class="section__title">
+        Recent Projects
+      </h2>
+
+      <div class="projects__container container grid">
+        <article class="projects__card">
+          <img src="assets/img/img-1.jpeg" alt="projects image" class="projects__img">
+
+          <div class="projects__model">
+            <span class="projects__subtitle">Web & ML</span>
+
+            <h2 class="projects__title">QueueMate</h2>
+
+            <a href="https://akmeghana29.github.io/QueueMate/" class="projects__button">
+              View demo <i class="ri-external-link-line"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <img src="assets/img/img-555.jpeg" alt="projects image" class="projects__img">
+
+          <div class="projects__model">
+            <span class="projects__subtitle">Web & ML</span>
+
+            <h2 class="projects__title">DataMorphAI</h2>
+
+            <a href="https://datamorphaibyhk15.netlify.app/" class="peojects__button">
+              View demo <i class="ri-external-link-line"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <img src="assets/img/img-2.jpg" alt="projects image" class="projects__img">
+
+          <div class="projects__model">
+            <span class="projects__subtitle">ML</span>
+
+            <h2 class="projects__title">Desktop Voice Asst</h2>
+
+            <a href="https://github.com/akmeghana29/Marco-Desktop-Voice-Assistant" class="peojects__button">
+              View demo <i class="ri-external-link-line"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <img src="assets/img/img-3.jpeg" alt="projects image" class="projects__img">
+
+          <div class="projects__model">
+            <span class="projects__subtitle">ML</span>
+
+            <h2 class="projects__title" style="text-align: center;">Plant Disease Prediction Model</h2>
+
+            <a href="https://github.com/akmeghana29/GreenScreenAI-Plant-Disease-Detection-Model" class="peojects__button">
+              View demo <i class="ri-external-link-line"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <img src="assets/img/img-4.jpg" alt="projects image" class="projects__img">
+
+          <div class="projects__model">
+            <span class="projects__subtitle">Data Sciene</span>
+
+            <h2 class="projects__title">Electric Vehicle Analysis</h2>
+
+            <a href="#" class="projects__button">
+              View demo <i class="ri-external-link-line"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="projects__card">
+          <img src="assets/img/img-66.jpg" alt="projects image" class="projects__img">
+
+          <div class="projects__model">
+            <span class="projects__subtitle">ML</span>
+
+            <h2 class="projects__title">Air Canvas</h2>
+
+            <a href="https://github.com/akmeghana29/Air-Canvas" class="peojects__button">
+              View demo <i class="ri-external-link-line"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <!================CONTACT=================>
+    <section class="contact section" id="contact">
+      <h3 class="section__subtitle">
+        Get In <span>Touch</span>
+      </h3>
+
+      <h2 class="section__title">
+        Contact Me
+      </h2>
+
+<div class="contact__container container grid">
+  <form action="" class="contact__form" id="contact-form">
+    <div class="contact__group">
+      <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
+      <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
+    </div>
+
+    <textarea name="user_project" required placeholder="Enter your message" class="contact__input"></textarea>
+
+    <p class="contact__message" id="contact-message"></p>
+    <button type="submit" class="button contact__button">
+      Send Message
+    </button>
+
+  </form>
+</div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <div>
+        <h1 class="footer__title">
+          AK <span>Meghana</span>
+        </h1>
+
+        <h2 class="footer__education">
+          AI and Full Stack Developer
+        </h2>
+      </div>
+
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/akmeg29/" target="_blank" class="footer__social-link">
+          <i class="ri-linkedin-box-fill"></i>
+        </a>
+
+        <a href="https://github.com/akmeghana29" target="_blank" class="footer__social-link">
+          <i class="ri-github-fill"></i>
+        </a>
+
+        <a href="https://leetcode.com/u/akmeghana29/" target="_blank" class="footer__social-link">
+          <i class="ri-code-box-fill"></i>
+        </a>
+      </div>
+
+      <span class="footer__copy">
+        Built with Passion.
+      </span>
+
+    </div>
+  </footer>
+
+  <!===================SCROLL UP==============>
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+  </a>
+  <!===================SCROLLREVEAL===========>
+<script src="assets/js/scrollreveal.min.js"></script>
+  <!===================EMAIL JS================>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+  <!-- MAIN JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
