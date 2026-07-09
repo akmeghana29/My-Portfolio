@@ -62,18 +62,21 @@ const sendEmail = (e) =>{
 
     //serviceID - templateID - #form - publicKey
     emailjs.sendForm('service_0hxe26c', 'template_mle6ri1', '#contact-form', 'F4mY2Klthd30KQ2B_')
-    .then(() =>{
-        contactMessage.textContent = 'Message sent successfully'
+.then(() =>{
 
-        setTimeout(() =>{
-            contactMessage.textContent = ''
-        }, 5000)
+    localStorage.setItem("lastSubmission", Date.now());
 
-        contactForm.reset()
+    contactMessage.textContent = 'Message sent successfully'
 
-    }, () =>{
-        contactMessage.textContent = 'Message not sent (service error)'
-    })
+    setTimeout(() =>{
+        contactMessage.textContent = ''
+    }, 5000)
+
+    contactForm.reset()
+
+}, () =>{
+    contactMessage.textContent = 'Message not sent (service error)'
+})
 }
 
 contactForm.addEventListener('submit', sendEmail)
