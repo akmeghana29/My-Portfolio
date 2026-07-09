@@ -42,6 +42,23 @@ const contactForm = document.getElementById('contact-form'),
 
 const sendEmail = (e) =>{
     e.preventDefault()
+	    // Rate limiting (5 minutes)
+    const lastSubmission = localStorage.getItem("lastSubmission");
+
+    if (lastSubmission) {
+        const now = Date.now();
+        const diff = now - parseInt(lastSubmission);
+
+        if (diff < 259200000) {
+            contactMessage.textContent = "Thanks for your message, please wait until your limit resets.";
+
+            setTimeout(() => {
+                contactMessage.textContent = "";
+            }, 5000);
+
+            return;
+        }
+    }
 
     //serviceID - templateID - #form - publicKey
     emailjs.sendForm('service_0hxe26c', 'template_mle6ri1', '#contact-form', 'F4mY2Klthd30KQ2B_')
