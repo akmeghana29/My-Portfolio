@@ -60,6 +60,27 @@ const sendEmail = (e) =>{
         }
     }
 
+	// Blocking specific email addresses
+const blockedEmails = [
+    "kamaleshofficial.co@gmail.com",
+    "k2007amalesh@gmail.com"
+];
+
+const userEmail = document.querySelector('input[name="user_email"]')
+    .value
+    .trim()
+    .toLowerCase();
+
+if (blockedEmails.includes(userEmail)) {
+    contactMessage.textContent = "Limit reached.";
+
+    setTimeout(() => {
+        contactMessage.textContent = "";
+    }, 5000);
+
+    return;
+}
+
     //serviceID - templateID - #form - publicKey
     emailjs.sendForm('service_0hxe26c', 'template_mle6ri1', '#contact-form', 'F4mY2Klthd30KQ2B_')
 .then(() =>{
