@@ -42,7 +42,7 @@ const contactForm = document.getElementById('contact-form'),
 
 const sendEmail = (e) =>{
     e.preventDefault()
-	    // Rate limiting (5 minutes)
+	    // Rate limiting (3 days)
     const lastSubmission = localStorage.getItem("lastSubmission");
 
     if (lastSubmission) {
